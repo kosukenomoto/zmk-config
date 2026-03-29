@@ -1,0 +1,6 @@
+if SHIELD_YUKA_MACROPAD
+
+config ZMK_KEYBOARD_NAME
+    default "yuka-macropad"
+
+endif # SHIELD_YUKA_MACROPAD
