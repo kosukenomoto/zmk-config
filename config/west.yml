@@ -10,5 +10,8 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
+    - name: zmk-driver-ext-power-transient
+      path: external/zmk-driver-ext-power-transient
+      clone-depth: 1
   self:
     path: config

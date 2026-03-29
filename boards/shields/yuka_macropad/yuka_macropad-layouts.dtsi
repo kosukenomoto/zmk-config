@@ -13,11 +13,16 @@
         // Edit this to define the positions and sizes of the keys, or remove it
         // if your keyboard will not support ZMK Studio.
         // https://zmk.dev/docs/development/hardware-integration/physical-layouts#optional-keys-property
-        keys  //                     w   h    x    y     rot    rx    ry
-            = <&key_physical_attrs 100 100    0    0       0     0     0>
-            , <&key_physical_attrs 100 100  100    0       0     0     0>
-            , <&key_physical_attrs 100 100    0  100       0     0     0>
-            , <&key_physical_attrs 100 100  100  100       0     0     0>
+        keys // X/Y座標の単位は100（1U単位）です
+            // 左列 (X=0)
+            = <&key_physical_attrs 100 100   0   0 0 0 0> // SW1
+            , <&key_physical_attrs 100 100   0 100 0 0 0> // SW2
+            
+            // 右列 (X=100)
+            , <&key_physical_attrs 100 100 100   0 0 0 0> // SW3
+            , <&key_physical_attrs 100 100 100 100 0 0 0> // SW4
+            , <&key_physical_attrs 100 100 100 200 0 0 0> // SW5
+            , <&key_physical_attrs 100 100 100 300 0 0 0> // SW6
             ;
     };
 };
