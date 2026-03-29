@@ -14,8 +14,6 @@ config ZMK_PM_SOFT_OFF
 # エンコーダーを使う場合
 config EC11
     default y
-config EC11_TRIGGER_GLOBAL_THREAD
-    default y
 
 # 設定の保存を安定させる（電池駆動時に推奨）
 config ZMK_SETTINGS_SAVE_DEBOUNCE
