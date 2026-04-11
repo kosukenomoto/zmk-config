@@ -34,19 +34,19 @@
         interrupt-gpios = <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
     };
 
-    main_encoder: encoder {
-        compatible = "alps,ec11";
-        a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // A相: D8
-        b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // B相: D7
-        steps = <24>;
-        status = "okay"; // のサンプルから status を有効化
-    };
+ //   main_encoder: encoder {
+ //       compatible = "alps,ec11";
+ //       a-gpios = <&xiao_d 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // A相: D8
+ //       b-gpios = <&xiao_d 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; // B相: D7
+ //       steps = <24>;
+ //       status = "okay"; // のサンプルから status を有効化
+ //   };
 
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&main_encoder>;
-        triggers-per-rotation = <24>;
-    };
+ //   sensors: sensors {
+ //       compatible = "zmk,keymap-sensors";
+ //       sensors = <&main_encoder>;
+ //       triggers-per-rotation = <24>;
+ //   };
 
 //    kscan: kscan {
 //        // If the hardware does not use a switch matrix, change this to the

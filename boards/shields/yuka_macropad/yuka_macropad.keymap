@@ -11,8 +11,8 @@
     // overlayの &main_encoder をキーマップ上の機能と紐付けます
     sensors: sensors {
         compatible = "zmk,sensors";
-        sensors = <&main_encoder>;
-        triggers-per-rotation = <24>;
+        //sensors = <&main_encoder>;
+        //triggers-per-rotation = <24>;
     };
 
     keymap {
@@ -30,7 +30,7 @@
             >;
 
             // エンコーダーの動作
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            //sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         // 設定用レイヤー (Layer 1) - SW6を押しながら操作
@@ -43,7 +43,7 @@
             >;
 
             // レイヤー1でのエンコーダー動作（例：ページスクロール）
-            sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+            //sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
         };
     };
 };
