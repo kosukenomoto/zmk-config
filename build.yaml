@@ -21,4 +21,5 @@
 include :
    - board: xiao_ble
      shield: yuka_macropad
-
+   - board: xiao_ble
+     shield: settings_reset
