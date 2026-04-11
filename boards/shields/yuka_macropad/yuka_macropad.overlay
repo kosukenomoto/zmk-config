@@ -76,8 +76,8 @@
         // See https://zmk.dev/docs/development/hardware-integration/new-shield#matrix-transform
         // for how to configure this
         compatible = "zmk,matrix-transform";
-        columns = <2>;
-        rows = <4>;
+        columns = <3>;
+        rows = <3>;
         map = <
             RC(1, 0)    RC(0, 1)    // 1段目: SW1 (左) , SW3 (右)
             RC(2, 0)    RC(2, 1)    // 2段目: SW2 (左) , SW4 (右)
