@@ -18,7 +18,7 @@
 //        compatible = "zmk,battery-voltage-divider";
         compatible = "zmk,non-lipo-battery";
         //io-channels = <&adc 0>;
-        io-channels = <&adc 0 ADC_GAIN_1_6 ADC_REF_INTERNAL ADC_ACQ_TIME_DEFAULT>;
+        io-channels = <&adc 0>;
         //power-gpios; // unset
         //output-ohms = <470000>;
         //full-ohms = <(1000000 + 470000)>;
