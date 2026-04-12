@@ -14,9 +14,9 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       import: app/west.yml
-    - name: zmk-feature-non-lipo-battery-management
-      remote: sekigon-gonnoc
-      revision: main
+#    - name: zmk-feature-non-lipo-battery-management
+#      remote: sekigon-gonnoc
+#      revision: main
     - name: zmk-driver-ext-power-transient
       remote: cormoran
       revision: main

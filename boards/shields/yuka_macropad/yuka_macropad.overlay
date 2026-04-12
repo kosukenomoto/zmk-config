@@ -15,13 +15,12 @@
     };
 
     vbatt_custom: vbatt_custom {
-//        compatible = "zmk,battery-voltage-divider";
-        compatible = "zmk,non-lipo-battery";
+        compatible = "zmk,battery-voltage-divider";
         //io-channels = <&adc 0>;
         io-channels = <&adc 0>;
         //power-gpios; // unset
-        //output-ohms = <470000>;
-        //full-ohms = <(1000000 + 470000)>;
+        output-ohms = <470000>;
+        full-ohms = <(1000000 + 470000)>;
         // For Ni-Mh 1U
         //mv-to-pct-thresholds = <1100 1150 1200 1220 1240 1260 1280 1300 1320 1350 1400>;
     };
@@ -92,14 +91,14 @@
 
 &adc {
     status = "okay";
-//    #address-cells = <1>;
-//    #size-cells = <0>;
-//    channel@0 {
-//        reg = <0>;
-//        zephyr,gain = "ADC_GAIN_1_6";
-//        zephyr,reference = "ADC_REF_INTERNAL";
-//        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//        zephyr,input-positive = <NRF_SAADC_AIN0>;
-//        zephyr,resolution = <12>;
-//    };
+    #address-cells = <1>;
+    #size-cells = <0>;
+    channel@0 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1_6";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,input-positive = <NRF_SAADC_AIN0>;
+        zephyr,resolution = <12>;
+    };
 };
