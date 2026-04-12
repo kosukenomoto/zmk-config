@@ -15,12 +15,13 @@
     };
 
     vbatt: vbatt {
-        compatible = "zmk,battery-voltage-divider";
+//        compatible = "zmk,battery-voltage-divider";
+        compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 0>;
 //        power-gpios; // unset
         power-gpios = <&xiao_d 0 GPIO_ACTIVE_HIGH>;
-        output-ohms = <470000>;
-        full-ohms = <(1000000 + 470000)>;
+//        output-ohms = <470000>;
+//        full-ohms = <(1000000 + 470000)>;
         // For Ni-Mh 1U
 //        mv-to-pct-thresholds = <1100 1150 1200 1220 1240 1260 1280 1300 1320 1350 1400>;
     };
