@@ -1,4 +1,5 @@
 manifest:
+  version: 1.2
   defaults:
     revision: main
   remotes:
