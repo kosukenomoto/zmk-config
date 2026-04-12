@@ -15,7 +15,8 @@
     };
 
     vbatt_custom: vbatt_custom {
-        compatible = "zmk,battery-voltage-divider";
+//        compatible = "zmk,battery-voltage-divider";
+        compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 0>;
         //power-gpios; // unset
         output-ohms = <470000>;
