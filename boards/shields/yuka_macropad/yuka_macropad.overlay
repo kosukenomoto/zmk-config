@@ -30,6 +30,10 @@
     non_lipo_battery: non_lipo_battery {
         compatible = "zmk,non-lipo-battery";
         io-channels = <&adc 0>;
+        power-gpios = <&gpio0 1 GPIO_ACTIVE_HIGH>;  // Replace with your GPIO
+    };
+};
+
     };
 
     kscan: kscan {
