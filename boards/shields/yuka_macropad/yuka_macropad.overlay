@@ -9,6 +9,7 @@
 / {
     chosen {
 //        zmk,default-output = &bt;
+        zephyr,settings-partition = &storage_partition;
         zmk,physical-layout = &default_layout;
         zmk,battery = &non_lipo_battery;
         zmk,kscan = &kscan;
@@ -99,4 +100,13 @@
 
 &adc {
     status = "okay";
+};
+
+&flash0 {
+    partitions {
+        storage_partition: partition@f0000 {
+            label = "storage";
+            reg = <0x000f0000 0x00010000>;
+        };
+    };
 };
