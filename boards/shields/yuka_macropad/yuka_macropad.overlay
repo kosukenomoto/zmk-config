@@ -8,6 +8,7 @@
 
 / {
     chosen {
+        zmk,default-output = &bt;
         zmk,physical-layout = &default_layout;
         zmk,battery = &vbatt;
         zmk,kscan = &kscan;
