@@ -10,11 +10,11 @@
     chosen {
         zmk,default-output = &bt;
         zmk,physical-layout = &default_layout;
-        zmk,battery = &vbatt;
+        zmk,battery = &vbatt_custom;
         zmk,kscan = &kscan;
     };
 
-    vbatt: vbatt {
+    vbatt_custom: vbatt_custom {
         compatible = "zmk,battery-voltage-divider";
         io-channels = <&adc 0>;
         //power-gpios; // unset
@@ -90,4 +90,16 @@
 
 &adc {
     status = "okay";
+    #address-cells = <1>;
+    #size-cells = <0>;
+
+    // nRF52840の P0.02 (AIN0) をADCチャンネル0として明示的に設定
+    channel@0 {
+        reg = <0>;
+        zephyr,gain = "ADC_GAIN_1_6";
+        zephyr,reference = "ADC_REF_INTERNAL";
+        zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+        zephyr,input-positive = <NRF_SAADC_AIN0>; // D0ピン = P0.02 = AIN0
+        zephyr,resolution = <12>;
+    };
 };
