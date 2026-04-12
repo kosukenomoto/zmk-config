@@ -23,7 +23,7 @@
             // matrix-transformの順序: 
             // SW1, SW3 (1段目) / SW2, SW4 (2段目) / なし, SW5 (3段目) / なし, SW6 (4段目)
             bindings = <
-                &bt BT_CLR   &settings_save    // 1段目: SW1, SW3
+                &bt BT_CLR   &kp A    // 1段目: SW1, SW3
                 &bt BT_SEL 0 &kp D    // 2段目: SW2, SW4 (注: SW2とSW3は物理的に別だが同じRC値)
                              &kp E    // 3段目: SW5 (右側のみ)
                              &mo 1    // 4段目: SW6 (右側のみ / レイヤー1へ)
