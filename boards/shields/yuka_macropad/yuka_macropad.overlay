@@ -12,6 +12,7 @@
         zephyr,settings-partition = &storage_partition;
         zmk,physical-layout = &default_layout;
         zmk,battery = &non_lipo_battery;
+        zmk,sensors = &sensors;
         zmk,kscan = &kscan;
     };
 
