@@ -97,13 +97,14 @@
                         RC(1, 2)    // 4段目: (なし)   , SW6 (右)
         >;
     };
-};
 
- encoder_physical_attrs: encoder_physical_attrs {
-    compatible = "zmk,encoder-physical-attrs";
-    steps = <24>;
-};
 
+     encoder_physical_attrs: encoder_physical_attrs {
+        compatible = "zmk,encoder-physical-attrs";
+        steps = <24>;
+    };
+
+};
 &adc {
     status = "okay";
 };
