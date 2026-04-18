@@ -99,6 +99,11 @@
     };
 };
 
+ encoder_physical_attrs: encoder_physical_attrs {
+    compatible = "zmk,encoder-physical-attrs";
+    steps = <24>;
+};
+
 &adc {
     status = "okay";
 };
