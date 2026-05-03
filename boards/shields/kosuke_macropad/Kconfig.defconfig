@@ -1,6 +1,6 @@
-if SHIELD_YUKA_MACROPAD
+if SHIELD_KOSUKE_MACROPAD
 
 config ZMK_KEYBOARD_NAME
-    default "yuka-macropad"
+    default "kosuke-macropad"
 
 endif # SHIELD_YUKA_MACROPAD

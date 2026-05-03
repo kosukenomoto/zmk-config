@@ -3,8 +3,8 @@
 # for instructions.
 
 file_format: "1"
-id: yuka_macropad
-name: yuka-macropad
+id: kosuke_macropad
+name: kosuke-macropad
 type: shield
 
 # Set this to a URL that documents the keyboard.
