@@ -42,7 +42,7 @@
           bindings = <
               &kp LS(COMMA)   &kp LS(DOT)   // 再生速度±
               &kp LEFT        &kp RIGHT     // 5秒シーク
-                               &kp T        // シアターモード
+                               &bt BT_CLR        // シアターモード
                                &trans
           >;
       
